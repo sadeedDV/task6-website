@@ -1,64 +1,141 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadeed | Developer Portfolio</title>
+    <title>Nova | Modern Website</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <header>
-        <h2>Sadeed</h2>
+        <nav class="navbar">
+            <h2 class="logo">Nova<span>.</span></h2>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+            </div>
+
+            <a href="#contact" class="nav-button">Get Started</a>
         </nav>
     </header>
 
-    <main>
 
-        <section id="home">
-            <p>Hello, I'm</p>
-            <h1>Sadeed</h1>
-            <h2>Web Developer</h2>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
 
-            <p>
-                I'm learning web development, Linux, Git and
-                modern development tools.
+        <div class="hero-content">
+            <p class="small-title">WELCOME TO NOVA</p>
+
+            <h1>
+                Simple ideas.
+                <span>Beautiful design.</span>
+            </h1>
+
+            <p class="hero-text">
+                A clean and modern website built with simple HTML and CSS.
+                Fast, responsive and easy to customize.
             </p>
 
-            <a href="#about">Explore My Profile</a>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I'm an aspiring developer who enjoys learning
-                how websites and software work.
-            </p>
-        </section>
-
-        <section id="skills">
-            <h2>My Skills</h2>
-
-            <div>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Linux</span>
-                <span>Git</span>
+            <div class="hero-buttons">
+                <a href="#features" class="primary-button">Explore More</a>
+                <a href="#about" class="secondary-button">Learn More</a>
             </div>
-        </section>
+        </div>
 
-    </main>
+        <div class="hero-card">
+            <div class="circle"></div>
+            <h3>Modern Design</h3>
+            <p>Clean layouts with a fresh and colorful style.</p>
+        </div>
 
+    </section>
+
+
+    <!-- Features -->
+    <section class="features" id="features">
+
+        <div class="section-heading">
+            <p>WHAT WE OFFER</p>
+            <h2>Everything kept simple.</h2>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Fast</h3>
+                <p>
+                    Lightweight and simple website structure
+                    for a smooth experience.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Beautiful</h3>
+                <p>
+                    A modern color combination and clean
+                    visual design.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>Responsive</h3>
+                <p>
+                    Works nicely on desktops, tablets and
+                    mobile devices.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div>
+            <p class="small-title">ABOUT NOVA</p>
+            <h2>Simple websites can still look premium.</h2>
+        </div>
+
+        <p>
+            Nova is a simple static website created using only
+            HTML and CSS. The design can easily be changed,
+            expanded and connected to GitHub.
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Ready to get started?</h2>
+        <p>Build something simple. Make it beautiful.</p>
+
+        <a href="mailto:hello@example.com" class="primary-button">
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Sadeed. Built with HTML & CSS.</p>
+        <p>© 2026 Nova. All rights reserved.</p>
     </footer>
 
 </body>
 </html>
+```
+
