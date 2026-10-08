@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #050505;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #050505;
+    border-bottom: 1px solid #183d2a;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span,
+.hero h1 span {
+    color: #22c55e;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #22c55e;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background:
+        radial-gradient(circle at center, #12351f 0%, #050505 55%);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.welcome,
+.section-label {
+    color: #22c55e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #d1d5db;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #9ca3af;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #22c55e;
+    color: #031109;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #4ade80;
+    transform: translateY(-3px);
+}
+
+.section {
+    max-width: 850px;
+    margin: auto;
+    padding: 90px 25px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section > p:not(.section-label) {
+    color: #9ca3af;
+    max-width: 650px;
+    margin: auto;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.skill {
+    padding: 14px 25px;
+    background: #0d0d0d;
+    border: 1px solid #1f6b3b;
+    border-radius: 8px;
+    color: #e5e7eb;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    color: #22c55e;
+    border-color: #22c55e;
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #183d2a;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+}
