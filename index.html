@@ -4,141 +4,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova | Modern Website</title>
-
+    <meta name="theme-color" content="#080d18">
+    <meta name="description" content="Sadeed DV — Cloud and DevOps enthusiast building automation, infrastructure and deployment solutions.">
+    <title>Sadeed DV | Cloud & DevOps Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="#home">Sadeed<span>.</span></a>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">Nova<span>.</span></h2>
-
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#features">Features</a>
+            <nav class="nav-links" aria-label="Main navigation">
                 <a href="#about">About</a>
-            </div>
-
-            <a href="#contact" class="nav-button">Get Started</a>
-        </nav>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
+            </nav>
+        </div>
     </header>
 
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    CLOUD & DEVOPS ENTHUSIAST
+                </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+                <p class="eyebrow">HELLO, I'M SADEED DV</p>
+                <h1>Building reliable systems.<br>
+                    <span>Automating what matters.</span>
+                </h1>
 
-        <div class="hero-content">
-            <p class="small-title">WELCOME TO NOVA</p>
-
-            <h1>
-                Simple ideas.
-                <span>Beautiful design.</span>
-            </h1>
-
-            <p class="hero-text">
-                A clean and modern website built with simple HTML and CSS.
-                Fast, responsive and easy to customize.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#features" class="primary-button">Explore More</a>
-                <a href="#about" class="secondary-button">Learn More</a>
-            </div>
-        </div>
-
-        <div class="hero-card">
-            <div class="circle"></div>
-            <h3>Modern Design</h3>
-            <p>Clean layouts with a fresh and colorful style.</p>
-        </div>
-
-    </section>
-
-
-    <!-- Features -->
-    <section class="features" id="features">
-
-        <div class="section-heading">
-            <p>WHAT WE OFFER</p>
-            <h2>Everything kept simple.</h2>
-        </div>
-
-        <div class="cards">
-
-            <div class="card">
-                <div class="icon">⚡</div>
-                <h3>Fast</h3>
-                <p>
-                    Lightweight and simple website structure
-                    for a smooth experience.
+                <p class="hero-description">
+                    I explore cloud infrastructure, Linux administration,
+                    containerization and CI/CD — turning technical concepts
+                    into practical solutions.
                 </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-primary">
+                        Explore my work <span>↗</span>
+                    </a>
+                    <a href="#contact" class="button button-secondary">
+                        Get in touch
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/sadeedDV" target="_blank"
+                       rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/sadeed-dv"
+                       target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <a href="mailto:Sadeed6222@gmail.com">Email ↗</a>
+                </div>
             </div>
 
-            <div class="card">
-                <div class="icon">🎨</div>
-                <h3>Beautiful</h3>
-                <p>
-                    A modern color combination and clean
-                    visual design.
+            <div class="hero-visual" aria-label="Cloud and DevOps illustration">
+                <div class="visual-glow"></div>
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="terminal-card">
+                    <div class="terminal-header">
+                        <div class="window-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="terminal-title">sadeed@devops: ~</span>
+                    </div>
+
+                    <div class="terminal-body">
+                        <p><span class="terminal-green">➜</span> whoami</p>
+                        <p class="terminal-output">cloud-devops-enthusiast</p>
+                        <p><span class="terminal-green">➜</span> skills --list</p>
+                        <p class="terminal-output">Linux · Docker · Git</p>
+                        <p class="terminal-output">Bash · Networking · CI/CD</p>
+                        <p><span class="terminal-green">➜</span> status</p>
+                        <p class="success-line"><span class="terminal-green">●</span> Always learning and building</p>
+                        <p><span class="terminal-green">➜</span> <span class="cursor">_</span></p>
+                    </div>
+                </div>
+
+                <div class="floating-tag tag-top">☁ Cloud</div>
+                <div class="floating-tag tag-bottom">⌘ Automation</div>
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span class="scroll-line"></span> SCROLL TO EXPLORE
+            </a>
+        </section>
+
+        <section class="section container" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">01 / ABOUT ME</p>
+                <h2>Curious by nature.<br><span>Technical by practice.</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>
+                        I'm a Computer Science and Business Systems graduate
+                        with a strong interest in cloud computing and DevOps.
+                        I enjoy learning how infrastructure works behind the
+                        scenes and finding ways to make systems more reliable
+                        through automation.
+                    </p>
+                    <p>
+                        Through hands-on labs and internship experience, I'm
+                        developing my skills in Linux, containers, networking,
+                        monitoring and deployment workflows. My goal is to
+                        keep learning, solve real problems and build a strong
+                        foundation in modern infrastructure engineering.
+                    </p>
+                    <a class="text-link" href="#contact">Let's connect <span>↗</span></a>
+                </div>
+
+                <div class="about-cards">
+                    <article class="info-card">
+                        <span class="card-icon">⌘</span>
+                        <h3>Automation First</h3>
+                        <p>Using scripts and repeatable workflows to simplify everyday tasks.</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="card-icon">◇</span>
+                        <h3>Hands-on Learning</h3>
+                        <p>Building lab environments to understand systems through practice.</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="card-icon">↗</span>
+                        <h3>Always Improving</h3>
+                        <p>Growing my technical knowledge one project at a time.</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="card-icon">◎</span>
+                        <h3>Team Mindset</h3>
+                        <p>Communicating clearly, collaborating and solving problems.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">02 / TECH STACK</p>
+                    <h2>Tools I use to <span>build and learn.</span></h2>
+                    <p class="section-intro">
+                        My current toolkit spans operating systems, cloud fundamentals,
+                        scripting, containers and networking.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-card-heading"><span>☁</span><span class="skill-number">01</span></div>
+                        <h3>Cloud Platforms</h3>
+                        <div class="tags">
+                            <span>AWS</span><span>EC2</span><span>S3</span>
+                            <span>IAM Fundamentals</span><span>Azure Fundamentals</span>
+                            <span>Google Cloud Fundamentals</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-heading"><span>⌘</span><span class="skill-number">02</span></div>
+                        <h3>DevOps & Automation</h3>
+                        <div class="tags">
+                            <span>Git</span><span>Docker</span><span>Jenkins Basics</span>
+                            <span>CI/CD Fundamentals</span><span>Bash Scripting</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-heading"><span>▣</span><span class="skill-number">03</span></div>
+                        <h3>Systems & Servers</h3>
+                        <div class="tags">
+                            <span>Linux</span><span>Ubuntu</span><span>Nginx</span>
+                            <span>Windows Server Basics</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-heading"><span>⌁</span><span class="skill-number">04</span></div>
+                        <h3>Networking</h3>
+                        <div class="tags">
+                            <span>IP Addressing</span><span>DHCP</span><span>VLAN</span>
+                            <span>VPN</span><span>NAT</span><span>Load Balancing</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-heading"><span>⌨</span><span class="skill-number">05</span></div>
+                        <h3>Programming</h3>
+                        <div class="tags">
+                            <span>Python</span><span>Bash</span><span>Shell Scripting</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-card-heading"><span>◈</span><span class="skill-number">06</span></div>
+                        <h3>Development Tools</h3>
+                        <div class="tags">
+                            <span>VS Code</span><span>VirtualBox</span>
+                            <span>VMware Workstation</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="experience">
+            <div class="section-heading">
+                <p class="eyebrow">03 / EXPERIENCE & EDUCATION</p>
+                <h2>Learning through <span>real-world practice.</span></h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta"><span>2026 — Present</span><span class="timeline-badge">INTERNSHIP</span></div>
+                        <h3>DevOps Intern</h3>
+                        <h4>2Cloud</h4>
+                        <p>
+                            Gaining hands-on exposure to CI/CD pipeline setup,
+                            cloud infrastructure monitoring, containerized
+                            deployments and automation workflows.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta"><span>2022 — 2026</span><span>EDUCATION</span></div>
+                        <h3>B.Tech — Computer Science and Business Systems</h3>
+                        <h4>Anna University</h4>
+                        <p>Graduated with a CGPA of 8.2.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta"><span>2020 — 2022</span><span>EDUCATION</span></div>
+                        <h3>Higher Secondary</h3>
+                        <h4>DHSS Nadapuram</h4>
+                        <p>Scored 79%.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">04 / SELECTED PROJECTS</p>
+                    <h2>Learning becomes real <span>when you build.</span></h2>
+                    <p class="section-intro">
+                        Practical projects that help me explore systems, automation and application design.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card project-featured">
+                        <div class="project-top">
+                            <div class="project-icon">⌘</div>
+                            <span class="project-index">PROJECT 01</span>
+                        </div>
+                        <p class="project-type">INFRASTRUCTURE / AUTOMATION</p>
+                        <h3>Personal Cloud Lab</h3>
+                        <p>
+                            Built a multi-VM Linux lab to practice system
+                            administration, Docker containers, Bash
+                            automation and simulated networking scenarios
+                            including DHCP, NAT and VLANs.
+                        </p>
+                        <div class="tags">
+                            <span>Linux</span><span>Docker</span>
+                            <span>Bash</span><span>VirtualBox</span><span>Networking</span>
+                        </div>
+                        <div class="project-footer"><span>Hands-on lab environment</span><span>↗</span></div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">◇</div>
+                            <span class="project-index">PROJECT 02</span>
+                        </div>
+                        <p class="project-type">APPLICATION / SYSTEM DESIGN</p>
+                        <h3>Token-Based Donation Distribution</h3>
+                        <p>
+                            Designed a token-based system concept to digitize
+                            donation collection, tracking and distribution,
+                            aiming to improve transparency and reduce manual
+                            record-keeping.
+                        </p>
+                        <div class="tags">
+                            <span>System Design</span><span>Digital Tracking</span>
+                            <span>Transparency</span>
+                        </div>
+                        <div class="project-footer"><span>Academic project</span><span>↗</span></div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">⌁</div>
+                            <span class="project-index">PROJECT 03</span>
+                        </div>
+                        <p class="project-type">WEB / VERSION CONTROL</p>
+                        <h3>Portfolio Website</h3>
+                        <p>
+                            Created a responsive personal website and practiced
+                            Git-based development with feature branches, remote
+                            repositories, pull requests and GitHub Pages deployment.
+                        </p>
+                        <div class="tags">
+                            <span>HTML</span><span>CSS</span><span>Git</span>
+                            <span>GitHub</span><span>GitHub Pages</span>
+                        </div>
+                        <a class="project-footer project-link" href="https://github.com/sadeedDV/task6-website"
+                           target="_blank" rel="noopener noreferrer">
+                            View repository <span>↗</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="certifications">
+            <div class="section-heading">
+                <p class="eyebrow">05 / CONTINUOUS LEARNING</p>
+                <h2>Building a stronger <span>foundation.</span></h2>
+            </div>
+
+            <div class="cert-list">
+                <div class="cert-item"><span class="cert-symbol">✳</span><div><h3>AWS Cloud Practitioner Essentials</h3><p>In progress</p></div><span class="cert-arrow">↗</span></div>
+                <div class="cert-item"><span class="cert-symbol">◎</span><div><h3>Networking Fundamentals</h3><p>Cisco Networking Academy</p></div><span class="cert-arrow">↗</span></div>
+                <div class="cert-item"><span class="cert-symbol">⌘</span><div><h3>Linux Essentials</h3><p>Cisco Networking Academy</p></div><span class="cert-arrow">↗</span></div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container contact-inner">
+                <p class="eyebrow">06 / GET IN TOUCH</p>
+                <h2>Let's build something<br><span>meaningful together.</span></h2>
+                <p class="contact-description">
+                    Interested in cloud, DevOps, automation or exchanging ideas?
+                    I'd be happy to connect.
                 </p>
+                <a class="button button-primary contact-button" href="mailto:Sadeed6222@gmail.com">
+                    Say hello <span>↗</span>
+                </a>
+                <div class="contact-socials">
+                    <a href="https://github.com/sadeedDV" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sadeed-dv" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:Sadeed6222@gmail.com">Email</a>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="card">
-                <div class="icon">📱</div>
-                <h3>Responsive</h3>
-                <p>
-                    Works nicely on desktops, tablets and
-                    mobile devices.
-                </p>
-            </div>
-
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a class="logo" href="#home">Sadeed<span>.</span></a>
+            <p>Designed with curiosity. Built for what comes next.</p>
+            <p>© 2026 Sadeed DV</p>
         </div>
-
-    </section>
-
-
-    <!-- About -->
-    <section class="about" id="about">
-
-        <div>
-            <p class="small-title">ABOUT NOVA</p>
-            <h2>Simple websites can still look premium.</h2>
-        </div>
-
-        <p>
-            Nova is a simple static website created using only
-            HTML and CSS. The design can easily be changed,
-            expanded and connected to GitHub.
-        </p>
-        <p class="about-highlight">
-    Currently building projects and learning professional development workflows.
-</p>
-
-    </section>
-
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-
-        <h2>Ready to get started?</h2>
-        <p>Build something simple. Make it beautiful.</p>
-
-        <a href="mailto:hello@example.com" class="primary-button">
-            Contact Us
-        </a>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Nova. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
-```
 
